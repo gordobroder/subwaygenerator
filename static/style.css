@@ -1,6 +1,31 @@
 h1 {
+    margin: 0;
     background-color: green;
     color: yellow;
     text-align: center;
     border: 10px;
+    font-family: 'Schoolbell', cursive;
+    padding: 30px 0;
+    letter-spacing: 5px;
+}
+h2 {
+    margin-top: 0;
+    text-align: center;
+    background-color: #0caf0f;
+    font-family: 'Schoolbell', cursive;
+    color: yellow;
+}
+
+p{
+    margin-top: 150px;
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+    color: #87660d;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("/static/pattern.png");
 }
