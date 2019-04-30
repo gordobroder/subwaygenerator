@@ -9,9 +9,53 @@
 <body>
     <h1> Welcome to the Subway Generator</h1>
     <h2> Hello, your subway will be generated completely random. Hope you enjoy it</h2>
-    <div class="text">
-    <p> Your random subway will have the {{ rbread }} as the bread, it will be {{ rsize }} long. The main filling is {{ rfill }} and the cheese is {{ rcheese }}, your sauce is {{ rsauce }}.<br> Have a nice meal!</p>
+    <div class="wrap">
+        <div class="text">
+            <p> Your random subway will have the {{ rbread }} as the bread, it will be {{ rsize }} long. The main filling is {{ rfill }} and the cheese is {{ rcheese }}, your sauce is {{ rsauce }}.<br> Have a nice meal!</p>
+        </div>
+        <a href="{{ url_for('rand') }}"><button>Randomize it!</button></a>
+        <div class="menu">
+             <div class="ingredients">
+                 <h3>Bread</h3>
+                 <ul>
+                    {% for item in bread %}
+                    <li> {{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Size</h3>
+                <ul>
+                    {% for item in size %}
+                    <li> {{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Fill</h3>
+                <ul>
+                    {% for item in fill %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Cheese</h3>
+                <ul>
+                    {% for item in cheese %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Sauce</h3>
+                <ul>
+                    {% for item in sauce %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
-    <a href="{{ url_for('rand') }}"><button>Randomize it!</button></a>
 </body>
 </html>

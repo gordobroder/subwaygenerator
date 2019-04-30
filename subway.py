@@ -3,10 +3,6 @@ import random
 
 app = Flask(__name__)
 
-#this route sets the homepage, without randomizing anything, the users must click the buttom to generate a subway
-@app.route("/subway/")
-def subway():
-    return render_template("subway.html")
 
 #this is the function and lists of ingredients, it will also randomize the itens to generate a new sub.
 @app.route("/subway/random/")
@@ -27,7 +23,12 @@ def rand():
     rcheese = random.choice(cheese)
     rsauce = random.choice(sauce)
 
-    return render_template("random.html", rbread=rbread, rsize=rsize, rfill=rfill, rcheese=rcheese, rsauce=rsauce)
+    return render_template("random.html", rbread=rbread, rsize=rsize, rfill=rfill, rcheese=rcheese, rsauce=rsauce, bread=bread, size=size, fill=fill, cheese=cheese, sauce=sauce)
+
+#this route sets the homepage, without randomizing anything, the users must click the buttom to generate a subway
+@app.route("/subway/")
+def subway():
+    return render_template("subway.html")
 
 if __name__ == "__main__":
     app.run()

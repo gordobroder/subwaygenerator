@@ -15,7 +15,9 @@ h2 {
     font-family: 'Schoolbell', cursive;
     color: yellow;
 }
-
+h3 {
+    text-align: center;
+}
 p{
     margin-top: 150px;
     font-family: 'Schoolbell', cursive;
@@ -50,8 +52,40 @@ button:hover {
     background-color: #cca94c;
     transition: 0.4s;
 }
+
+ul {
+    display: inline;
+    list-style-type: none;
+}
+.wrap{
+    max-width: 100%;
+    width: 1080px;
+    height: auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    margin: auto;
+}
+.menu {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+
+}
 .text {
-    background: rgba(255, 255, 255, 0.5)
+    background: rgba(255, 255, 255, 0.5);
+}
+.ingredients{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 22px;
+    font-family: 'Schoolbell', cursive;
+    max-width: 100%;
+    width: 20%;
 }
 body {
     margin: 0;
