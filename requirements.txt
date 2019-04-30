@@ -15,5 +15,7 @@ pygobject==3.26.1
 pyxdg==0.25
 SecretStorage==2.3.1
 six==1.11.0
+style==1.1.0
+update==0.0.1
 virtualenv==15.1.0
 Werkzeug==0.15.2
