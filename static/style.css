@@ -22,8 +22,37 @@ p{
     text-align: center;
     color: #87660d;
     border-radius: 10px;
+    font-size: 45px;
+}
+a {
+    text-decoration: none;
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
+button{
+    font-family: 'Schoolbell', cursive;
+    background-color: #947b38;
+    transition: 0.4s;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    padding: 14px 40px;
+    margin: 0 auto;
+    color: white;
+}
+button:hover {
+    background-color: #cca94c;
+    transition: 0.4s;
+}
+.text {
+    background: rgba(255, 255, 255, 0.5)
+}
 body {
     margin: 0;
     padding: 0;
