@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Subway Generator</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
-    <h1> Welcome to the Subway Generator</h1>
-    <h2> Hello, your subway will be generated completely random. Hope you enjoy it</h2>
-    <div class="text">
-    <p>Click the buttom bellow to generate your random sub!</p>
+    <h1> Bem vindo ao Subway Generator</h1>
+    <h2> Olá, o seu Subway será gerado automaticamente, espero que goste!</h2>
+    <div class="wrap">
+        <div class="text">
+            <p>Clique no botão para gerar o seu Subway!</p>
+        </div>
+        <a href="{{ url_for('rand') }}"><button>Gerar Sub!</button></a>
     </div>
-    <a href="{{ url_for('rand') }}"><button>Randomize it!</button></a>
 </body>
 </html>

@@ -4,7 +4,7 @@ h1 {
     color: yellow;
     text-align: center;
     border: 10px;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Poppins', sans-serif;
     padding: 30px 0;
     letter-spacing: 5px;
 }
@@ -12,19 +12,20 @@ h2 {
     margin-top: 0;
     text-align: center;
     background-color: #0caf0f;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Poppins', sans-serif;
     color: yellow;
 }
 h3 {
     text-align: center;
+    color: #725915;
 }
 p{
-    margin-top: 150px;
-    font-family: 'Schoolbell', cursive;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #87660d;
     border-radius: 10px;
-    font-size: 45px;
+    font-size: 35px;
 }
 a {
     text-decoration: none;
@@ -35,11 +36,11 @@ a {
 }
 
 button{
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Poppins', sans-serif;
     background-color: #947b38;
     transition: 0.4s;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -54,8 +55,12 @@ button:hover {
 }
 
 ul {
+    padding-left: 0;
     display: inline;
     list-style-type: none;
+}
+li {
+    font-style: bold;
 }
 .wrap{
     max-width: 100%;
@@ -64,6 +69,10 @@ ul {
     display: block;
     background: rgba(255, 255, 255, 0.5);
     margin: auto;
+}
+.random-menus{
+    background-image: url("/static/bg-menu.jpg") inherit;
+
 }
 .menu {
     max-width: 100%;
@@ -79,11 +88,12 @@ ul {
 }
 .ingredients{
     text-align: center;
+    color: #87660d;
     display: flex;
     flex-direction: column;
     padding: 30px;
-    font-size: 22px;
-    font-family: 'Schoolbell', cursive;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
     max-width: 100%;
     width: 20%;
 }

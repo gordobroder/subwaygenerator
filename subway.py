@@ -1,14 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import random
 
 app = Flask(__name__)
-
 
 #this is the function and lists of ingredients, it will also randomize the itens to generate a new sub.
 @app.route("/subway/random/")
 def rand():
     #this is the list of all the ingredients of the subway
-    bread = ["9 grãos", "9 grãos com aveia e mel", "italiano", "parmesão com oregano", "Tres queijos"]
+    bread = ["9 Grãos", "9 Grãos com aveia e mel", "Italiano", "Parmesão com oregano", "Tres queijos"]
     size = ["30cm", "15cm"]
     fill = ["Atum", "Beef Bacon Chipotle", "Beef Barbecue Bacon", "Carne Supreme", "BMT", "Frango", "Frango Defumado",
             "Frango Empanado", "Frango Ranch", "Frango Teriyaki", "Steak Cheddar Cremoso", "Vegetariano"]
