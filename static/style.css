@@ -44,7 +44,7 @@ button{
     border: none;
     cursor: pointer;
     width: 100%;
-    display: block;
+    display: inline-block;
     padding: 14px 40px;
     margin: 0 auto;
     color: white;
@@ -68,7 +68,7 @@ li {
     height: auto;
     display: block;
     background: rgba(255, 255, 255, 0.5);
-    margin: auto;
+    margin: 0 auto;
 }
 .random-menus{
     background-image: url("/static/bg-menu.jpg") inherit;
@@ -85,6 +85,11 @@ li {
 }
 .text {
     background: rgba(255, 255, 255, 0.5);
+}
+.back {
+    display: block;
+    margin-top: 50px;
+
 }
 .ingredients{
     text-align: center;

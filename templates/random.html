@@ -9,11 +9,13 @@
 <body>
     <h1> Bem vindo ao Subway Generator</h1>
     <h2> Olá, o seu Subway será gerado automaticamente, espero que goste!</h2>
+    <a class="back" href="{{ url_for('subway') }}"><button>Voltar</button></a>
     <div class="wrap random-menus">
         <div class="text">
             <p> O seu Subway terá o pão {{ rbread }}, o tamanho dele será de {{ rsize }}. O sabor dele será {{ rfill }}! O seu queijo é {{ rcheese }} e também o molho {{ rsauce }}.<br> Tenha uma ótima refeição!!</p>
         </div>
         <a href="{{ url_for('rand') }}"><button>Gerar novo Sub!</button></a>
+
         <div class="menu">
              <div class="ingredients">
                  <h3>Pães</h3>
