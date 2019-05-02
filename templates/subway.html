@@ -13,6 +13,49 @@
             <p>Clique no botão para gerar o seu Subway!</p>
         </div>
         <a href="{{ url_for('rand') }}"><button>Gerar Sub!</button></a>
+        <p>Abaixo você pode conferir todos os ingredientes possíveis para seu Subway!</p>
+                <div class="menu">
+             <div class="ingredients">
+                 <h3>Pães</h3>
+                 <ul>
+                    {% for item in bread %}
+                    <li> {{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Tamanhos</h3>
+                <ul>
+                    {% for item in size %}
+                    <li> {{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Sabores</h3>
+                <ul>
+                    {% for item in fill %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Queijos</h3>
+                <ul>
+                    {% for item in cheese %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="ingredients">
+                <h3>Molhos</h3>
+                <ul>
+                    {% for item in sauce %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

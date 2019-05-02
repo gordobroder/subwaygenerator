@@ -20,7 +20,7 @@ h3 {
     color: #725915;
 }
 p{
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #87660d;
@@ -33,6 +33,7 @@ a {
     width: 100%;
     display: block;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 
 button{
@@ -67,11 +68,12 @@ li {
     width: 1080px;
     height: auto;
     display: block;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
 }
 .random-menus{
     background-image: url("/static/bg-menu.jpg") inherit;
+    margin-top: 0;
 
 }
 .menu {
@@ -88,7 +90,7 @@ li {
 }
 .back {
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
 
 }
 .ingredients{
