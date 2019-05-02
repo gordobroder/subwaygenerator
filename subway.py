@@ -14,13 +14,13 @@ sauce = ["Mostrada e Mel", "Cebola Agridoce", "Barbecue", "Parmesão", "Chipotle
 #this is the function and lists of ingredients, it will also randomize the itens to generate a new sub.
 @app.route("/subway/random/")
 def rand():
-
-    #the code bellow will select a random ingredient of the list above
+#the code bellow will select a random ingredient of the list above
     rbread = random.choice(bread)
     rsize = random.choice(size)
     rfill = random.choice(fill)
     rcheese = random.choice(cheese)
     rsauce = random.choice(sauce)
+
 
     return render_template("random.html", rbread=rbread, rsize=rsize, rfill=rfill, rcheese=rcheese, rsauce=rsauce, bread=bread, size=size, fill=fill, cheese=cheese, sauce=sauce)
 

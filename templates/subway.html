@@ -4,16 +4,16 @@
     <title>Subway Generator</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 </head>
 <body>
     <h1> Bem vindo ao Subway Generator</h1>
     <h2> Olá, o seu Subway será gerado automaticamente, espero que goste!</h2>
     <div class="wrap">
         <div class="text">
-            <p>Clique no botão para gerar o seu Subway!</p>
-        </div>
-        <a href="{{ url_for('rand') }}"><button>Gerar Sub!</button></a>
-        <p>Abaixo você pode conferir todos os ingredientes possíveis para seu Subway!</p>
+            <p>Clique no botão abaixo para gerar o seu Subway aleatoriamente!</p>
+            <a href="{{ url_for('rand') }}"><button>Gerar Sub!</button></a>
+            <p>Abaixo você pode conferir todos os ingredientes possíveis para seu Subway!</p>
                 <div class="menu">
              <div class="ingredients">
                  <h3>Pães</h3>
