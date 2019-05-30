@@ -11,7 +11,7 @@ fill = ["Atum", "Beef Bacon Chipotle", "Beef Barbecue Bacon", "Carne Supreme", "
 cheese = ["Cheddar", "Prato", "Provolone"]
 sauce = ["Mostrada e Mel", "Cebola Agridoce", "Barbecue", "Parmesão", "Chipotle", "Mostarda", "Maionese"]
 
-#this is the function and lists of ingredients, it will also randomize the itens to generate a new sub.
+#this is the function, it will also randomize the itens to generate a new sub.
 @app.route("/subway/random/")
 def rand():
 #the code bellow will select a random ingredient of the list above
